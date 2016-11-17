@@ -1,0 +1,494 @@
+@charset "UTF-8";
+/*设置统一样式*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*****************顶部搜索栏***************/
+.header-top {
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 10px;
+    background: #FE5400;
+    background-image: url("../img/index/logo.png");
+    background-repeat: no-repeat;
+    background-size: 27px 20px;
+    background-position: 4.5px center;
+    padding-left: 37px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+#search {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    background-color: #B52600;
+    text-align: center;
+    border-radius: 4px;
+}
+
+#search span {
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    display: inline-block;
+    color: #F0E0DC;
+}
+/**************顶部部查看客户端链接****************/
+.client{
+    background-color: rgba(66,66,74,0.96);
+    position: fixed;
+    top: 42px;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    z-index: 1000;
+    font-size: 14px;
+}
+.client-close{
+    background: url("../img/search/close.png") no-repeat;
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.p-text{
+    margin: 0;
+    padding: 10px 20px 0 20px;
+    display: -webkit-box;
+    height: 32px;
+    overflow: hidden;
+    -webkit-box-align: center;
+}
+
+.p-text .photo{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+.p-text .photo img{
+    width: 100%;
+    height: 100%;
+}
+.p-text span{
+    -webkit-box-flex: 1;
+    display: block;
+    margin: 0 12px;
+    line-height: 120%;
+    color: white;
+    font-family: "Microsoft YaHei";
+}
+.p-text-btn{
+    display: block;
+    color: #3d4245;
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 12px;
+    font-weight: normal;
+}
+/**********************主体部分*************************/
+.content{
+    width: 380px;
+    position: absolute;
+    left: 50%;
+    margin-left: -190px;
+    background: #efefef;
+}
+.wrap {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#content {
+    position: relative;
+    top: 42px;
+    /*width: 10rem;*/
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    background: white;
+}
+
+#content #lunbo {
+    width: 100%;
+    height: auto;
+}
+
+#lunbo li img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#lunbo li {
+    display: none;
+}
+
+#lunbo li:first-child {
+    display: block;
+}
+
+/*#rob {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    z-index: 1;
+    position: relative;
+    top: -5px;
+    background-repeat: no-repeat;
+    background-image: url("../img/index/rob.jpg");
+    background-position: center;
+    background-size: 100%;
+}*/
+
+#rob {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    position: relative;
+    top: -5px;
+}
+
+#rob img {
+    width: 100%;
+    height: auto;
+}
+
+/***************************菜单栏**************************/
+#content nav {
+    width: 100%;
+    height: 100%;
+}
+
+#content nav ul {
+    height: 70px;
+    line-height: 20px;
+    padding-top: 10px;
+}
+
+#content nav li {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+#content nav li a {
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    display: block;
+}
+
+#content nav li img {
+    width: 70%;
+    height: 70%;
+}
+
+/******************************淘宝头条********************************/
+.headline {
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid rgb(232, 232, 232);
+    border-bottom: 1px solid rgb(232, 232, 232);
+}
+
+.headline div {
+    float: left;
+}
+
+.headline-left {
+    width: 120px;
+    border-right: 1px solid rgb(232, 232, 232);
+    text-align: center;
+
+}
+
+.headline-left img {
+    width: 70%;
+    height: 70%;
+    margin-top: 10px;
+}
+
+#tbheadline li {
+    height: 40px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    line-height: 20px;
+    display: none;
+}
+
+#tbheadline li:first-child {
+    display: block;
+}
+
+#tbheadline li span {
+    width: 40px;
+    display: block;
+    border: 1px solid red;
+    border-radius: 10px;
+    font-size: 13px;
+    float: left;
+    text-align: center;
+    color: tomato;
+}
+
+#tbheadline li p {
+    margin-left: 20px;
+    float: left;
+}
+
+/*****************************双十一板块*********************************/
+.lacuna {
+    width: 100%;
+    height: 10px;
+    background: rgba(0, 0, 0, 0);
+    position: relative;
+    top: 41px;
+}
+
+.double-tenth {
+    width: 100%;
+    /*height: auto;*/
+    height: 350px;
+    background: rgb(253, 28, 47);
+    position: relative;
+    top: 41px;
+}
+
+.double-tenth #dtroom {
+    background-image: url("../img/index/assembly-room.png");
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    background-size: 400px 40px;
+    position: absolute;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.double-tenth #dtnav1,
+.double-tenth #dtnav2{
+    width: 98%;
+    height: 120px;
+    margin-left: 1%;
+    position: relative;
+    top: 50px;
+}
+
+.double-tenth #dtnav2{
+
+}
+.double-tenth #dtnav1 li,
+.double-tenth #dtnav2 li{
+   /* width: 23.75%;*/
+    width: 23%;
+    background: white;
+    height: auto;
+    float: left;
+    margin: 1%;
+}
+
+.double-tenth #dtnav1 li a,
+.double-tenth #dtnav2 li a{
+    display: block;
+    margin-top: 3px;
+}
+
+.double-tenth #dtnav1 ul li img,
+.double-tenth #dtnav2 ul li img{
+    width: 80%;
+    height: 60%;
+    position: relative;
+    left: 50%;
+    margin-left: -40%;
+}
+
+.double-tenth #dtnav1 .module,
+.double-tenth #dtnav2 .module{
+    width: 100%;
+    height: 120px;
+}
+
+.double-tenth #dtnav1 .module p,
+.double-tenth #dtnav2 .module p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+.double-tenth #dtnav1 .module div,
+.double-tenth #dtnav2 .module div{
+    width: 96%;
+    margin: -4px auto;
+    background-image: url("../img/index/textbg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    font-size: 13px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/*****************************响应式*********************************/
+/*@media only screen and (min-width: 540px){
+    #lunbo li img{
+        width: 600px;
+        height: 204px;
+    }
+    #rob{
+        width: 600px;
+        height: 200px;
+        background-size: 600px 200px;
+    }
+}
+@media only screen and (max-width: 540px) and (min-width: 300px){
+    #lunbo li img{
+        width: 100%;
+        height: 204px;
+    }
+    #rob{
+        width: 600px;
+        height: 200px;
+        background-size: 600px 200px;
+    }
+}
+@media only screen and (max-width: 300px){
+    #lunbo li img{
+        width: 300px;
+        height: 104px;
+    }
+    #rob{
+        width: 300px;
+        height: 100px;
+        background-size: 300px 100px;
+    }
+    #content nav{
+        width: 300px;
+        height: 100px;
+    }
+    #content nav ul{
+        height: 50px;
+    }
+    #content nav li{
+        float: left;
+        width: 16%;
+        text-align: center;
+        padding-top: 5px;
+    }
+    #content nav li a{
+        text-decoration: none;
+        font-size: 12px;
+        color: rgb(102, 102, 102);
+    }
+    #content nav li a p{
+        line-height: 15px;
+    }
+    #content nav li img{
+        width: 70%;
+        height: 70%;
+    }
+}*/
+/**********************底部区域*************************/
+#bottom{
+    width: 80%;
+    height: 100px;
+    background: #545454;
+    position: relative;
+    top: 50px;
+    padding: 10%;
+}
+#bottom .feature{
+    width: 100%;
+    height: auto;
+}
+#bottom .feature .buttons{
+    width: 100%;
+    height: 30px;
+}
+#bottom .feature .buttons a{
+    border-radius: 6px;
+    font-size: 14px;
+    display: block;
+    float: left;
+    color: #c3c6ca;
+    border: 2px solid #42454d;
+    background-color: #555965;
+    border-radius: 6px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 9px;
+    margin-left: 5%;
+}
+
+#bottom .feature .information{
+    width: 100%;
+    margin-top: 10px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 25%;
+    box-sizing: border-box;
+    background-image: url("../img/index/information.png");
+    background-repeat: no-repeat;
+    background-position: 15% center;
+    background-size: 25px 25px;
+    color: #c3c6ca;
+}
+
+#bottom .feature .information a{
+    color: #c3c6ca;
+    font-size: 12px;
+}
+/**********************底部导航*************************/
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    height: 38px;
+    border-top: 1px solid #E7E7E7;
+    border-bottom: 1px solid #F8F8F8;
+    background-color: #FFF;
+    z-index: 999;
+}
+
+footer a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #5D656B;
+    flex: 1; /*让所有弹性盒模型对象的子元素都有相同的长度*/
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    width: 20%;
+}
+
+footer a img {
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,344 @@
+@charset "UTF-8";
+/*设置统一样式*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #eee;
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/******************************************/
+.wrap{
+    width: 100%;
+    background: #eee;
+    height: 100%;
+    overflow: hidden;
+}
+.top header .user{
+    position: relative;
+    height: 120px;
+    margin: 0 auto;
+    background: #d34201 url("../img/mytb/mytbbg.jpg") no-repeat top center;
+    background-size: cover;
+    color: #fff;
+}
+/*用户头像*/
+.top header .user .user-photo{
+    position: absolute;
+    bottom: -45px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border-radius: 100%;
+    padding: 5px;
+    background: rgba(255,255,255,.7);
+}
+.top header .user .user-photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.top header .user .user-nick{
+    float: left;
+    width: 100%;
+    padding-left: 110px;
+    box-sizing: border-box;
+    margin-top: 70px;
+    font-size: 20px;
+}
+
+.top header .information{
+    height: 60px;
+    text-align: center;
+    margin-bottom: 1px;
+    border-bottom: 1px solid #e7e7e7;
+    background: #fff;
+}
+.top header .information ul{
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 30%;
+    box-sizing: border-box;
+    height: 30px;
+}
+.top header .information ul li{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    width: 33.3%;
+}
+.top header .information ul li a{
+    color: #4e4e4e;
+    font-size: 15px;
+}
+/*功能导航*/
+.feature{
+    margin-top: 10px;
+    border-bottom: 1px solid #e7e7e7;
+    background: #fff;
+}
+.feature ul{
+    width: 100%;
+    height: 60px;
+}
+.feature ul li{
+    width: 20%;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+}
+.feature ul li a{
+    display: block;
+    position: relative;
+    font-size: 13px;
+    color: #4e4e4e;
+}
+.feature ul li a img{
+    width: 20px;
+}
+.feature ul li a p{
+    font-size: 15px;
+}
+/*订单栏*/
+.feature .order{
+    width: 100%;
+    border-top: 1px solid #e7e7e7;
+    height: 40px;
+    padding-left: 20px;
+}
+.feature .order a{
+    display: block;
+    width: 100%;
+}
+.feature .order a div{
+    float: left;
+}
+.feature .order .order-logo{
+    width: 32px;
+    height: 32px;
+    background: #5090cd;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+.feature .order .order-logo img{
+    width: 30px;
+    height: 30px;
+    padding-left: 2px;
+    padding-top: 1px;
+}
+.feature .order a h2{
+    font-size: 16px;
+    padding: 10px;
+    color: #4e4e4e;
+    font-weight: 400;
+}
+/*右侧箭头*/
+.feature .order a .order-boult{
+    position: absolute;
+    right: 10px;
+    height: 40px;
+    line-height: 35px;
+    font-size: 18px;
+}
+.feature .order a .order-boult span{
+    font-size: 13px;
+    color: #4e4e4e;
+}
+/*****************导航*********************/
+.nav{
+    margin-top: 10px;
+    border-bottom: 1px solid #e7e7e7;
+}
+.nav ul{
+    width: 100%;
+    background: #fff;
+}
+.nav ul li{
+    width: 100%;
+    border-bottom: 1px solid #e7e7e7;
+    height: 40px;
+    padding-left: 20px;
+}
+.nav ul li a{
+    display: block;
+}
+.nav ul li a .car,
+.nav ul li a .search,
+.nav ul li a .pay,
+.nav ul li a .ww{
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+.nav ul li a .car{
+    background: #e7a200;
+}
+.nav ul li a .search{
+    background: #5090cd;
+}
+.nav ul li a .pay{
+    background: #00aeef;
+}
+.nav ul li a .ww{
+    background: #00aae8;
+}
+/*右侧箭头*/
+.nav ul li a .boult{
+    position: absolute;
+    right: 10px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.nav ul li a .nav-title h2{
+    font-size: 16px;
+    padding: 10px;
+    color: #4e4e4e;
+    font-weight: 400;
+}
+.nav ul li a div{
+    float: left;
+}
+/**************底部彩票/飞机票****************/
+.ticket{
+    margin-top: 10px;
+    border-bottom: 1px solid #e7e7e7;
+}
+.ticket ul{
+    width: 100%;
+    background: #fff;
+}
+.ticket ul li{
+    width: 100%;
+    border-bottom: 1px solid #e7e7e7;
+    height: 40px;
+    padding-left: 20px;
+}
+.ticket ul li a{
+    display: block;
+}
+.ticket ul li a .lottery,
+.ticket ul li a .air-ticket{
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+.ticket ul li a .lottery{
+    background: #e64c2e;
+}
+.ticket ul li a .air-ticket{
+    background: #00aeef;
+}
+
+.ticket ul li a .boult{
+    position: absolute;
+    right: 10px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+}
+.ticket ul li a .nav-title h2{
+    font-size: 16px;
+    padding: 10px;
+    color: #4e4e4e;
+    font-weight: 400;
+}
+.ticket ul li a div{
+    float: left;
+}
+
+/**************底部****************/
+footer{
+    height: 40px;
+    background: #fff;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+footer ul{
+    width: 100%;
+    padding-left: 20px;
+}
+footer ul li{
+    float: left;
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+}
+footer ul li a{
+    display: block;
+    font-size: 14px;
+    color: #616161;
+    font-weight: 400;
+}
+/**************底部查看客户端链接****************/
+.client{
+    background-color: rgba(66,66,74,0.96);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 48px;
+    width: 100%;
+    z-index: 1000;
+    font-size: 14px;
+}
+.client-close{
+    background: url("../img/search/close.png") no-repeat;
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.p-text{
+    margin: 0;
+    padding: 10px 10px 0 30px;
+    display: -webkit-box;
+    height: 32px;
+    overflow: hidden;
+    -webkit-box-align: center;
+}
+
+.p-text .photo{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+.p-text .photo img{
+    width: 100%;
+    height: 100%;
+}
+.p-text span{
+    -webkit-box-flex: 1;
+    display: block;
+    margin: 0 12px;
+    line-height: 120%;
+    color: white;
+    font-family: "Microsoft YaHei";
+}
+.p-text-btn{
+    display: block;
+    color: #3d4245;
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 12px;
+    font-weight: normal;
+}

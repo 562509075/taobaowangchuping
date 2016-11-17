@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/*设置统一样式*/
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #ffefa4;
+}
+/**********************************/
+.wrap{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.top{
+    width: 100%;
+}
+.top img{
+    width: 100%;
+}
+.bottom{
+    width: 90%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: #ff5055;
+    margin: 0 auto;
+}
+/****************返回主页******************/
+.logo{
+    width: 44px;
+    height: 44px;
+    display: block;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -22px;
+}
+.icon{
+    display: inline-block;
+    margin: auto 8px -8px 8px;
+    position: relative;
+    top: -3px;
+    background: url("../img/search/icons.png");
+    background-repeat: no-repeat;
+    background-size: 106px 543px;
+}
+.icons-home{
+    margin-top: 13px;
+    margin-left: 12px;
+    background-image: url("../img/search/icons.png");
+    background-position: -3px -396px;
+    width: 16px;
+    height: 16px;
+}

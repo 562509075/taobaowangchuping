@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="author" content="jerehedu">
+    <meta name="keywords" content="bootstrap,css,html">
+    <meta name="description" content="jerehedu">
+    <title>淘宝网-淘！我喜欢</title>
+    <style type="text/css"></style>
+    <link rel="stylesheet" href="css/login.css"/>
+    <script src="js/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+<header>
+    <a href="index.html" class="home">
+        <img src="img/index/home.png" alt="首页"/>
+    </a>
+    <span>淘宝账户登录</span>
+</header>
+<form action="#">
+    <div class="user">
+        <div class="label">账户</div>
+        <span class="input">
+            <input type="text" placeholder="手机号/邮箱/会员" id="username"/>
+        </span>
+    </div>
+    <div class="password">
+        <div class="label">登陆密码</div>
+        <span class="input">
+            <input type="password" placeholder="请输入密码" id="password"/>
+        </span>
+    </div>
+    <div class="submit">
+        <button type="submit" class="btn" id="submit" onclick="check(form);">登陆</button>
+    </div>
+</form>
+<div class="bottom">
+    <a href="#" class="al">免费注册</a>
+    <a href="#" class="ar">忘记密码</a>
+</div>
+</body>
+<script type="text/javascript">
+    /*登陆验证*/
+    function check (form)
+    {
+        var reg = /^\s*|\s*$/g;
+        if (form.username.value.replace(reg,'') == "")
+        {
+            alert ("请输入用户名");
+            form.username.focus ();
+            return false;
+        }
+        else if (form.password.value.replace(reg,'') == "")
+        {
+            alert ("请输入密码");
+            form.password.focus ();
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+</script>
+</html>
