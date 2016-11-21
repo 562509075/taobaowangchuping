@@ -33,7 +33,7 @@ $(function () {
 $(function () {
     $("#client-close").click(function () {
         $("#client").hide();
-        setTimeout($("#allcontent").removeClass("contentall"),2000);
+        $("#allcontent").removeClass("contentall");
     });
 });
 
