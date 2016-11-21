@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="author" content="jerehedu">
+    <meta name="keywords" content="bootstrap,css,html">
+    <meta name="description" content="jerehedu">
+    <title>淘宝注册</title>
+    <link rel="stylesheet" href="css/register.css"/>
+    <style type="text/css"></style>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/drag.js"></script>
+</head>
+<body>
+<header>
+    <a href="index.html" class="home">
+        <img src="img/index/home.png" alt="首页"/>
+    </a>
+    <span>淘宝注册</span>
+</header>
+<form action="#" class="register-form">
+    <p class="text">为了你的账户安全请填写一个手机号完成验证</p>
+    <div class="register-information">
+        <div class="country">
+            <p>国家/地区</p>
+            <select name="country" id="country">
+                <option value="32">白俄罗斯（+357）</option>
+                <option value="32">喀麦隆（+237）</option>
+                <option value="32">加蓬（+241）</option>
+                <option value="32">巴西（+55）</option>
+                <option value="32">埃及（+20）</option>
+                <option value="32">乍得（+235）</option>
+                <option value="32">多哥（+228）</option>
+                <option value="32">马来西亚（+60）</option>
+                <option value="32">丹麦（+45）</option>
+                <option value="32">尼加拉瓜（+505）</option>
+                <option value="32">阿尔巴尼亚（+355）</option>
+                <option value="32">瑞士（+41）</option>
+                <option value="32">韩国（+82）</option>
+                <option value="32">乌兹别克斯坦（+998）</option>
+                <option value="32">吉尔吉斯斯坦（+996）</option>
+                <option value="32">泰国（+66）</option>
+                <option value="32">西班牙（+34）</option>
+                <option value="32">摩尔多瓦（+373）</option>
+                <option value="32">塞内加尔（+221）</option>
+                <option value="32">南非（+27）</option>
+                <option value="32">德国（+49）</option>
+                <option value="32">纳米比亚（+264）</option>
+                <option value="32">玻利维亚（+591）</option>
+                <option value="32">津巴布韦（+263）</option>
+                <option value="32">蒙古（+976）</option>
+                <option value="32">文莱（+673）</option>
+                <option value="32">马里（+223）</option>
+                <option value="32">沙特阿拉伯（+966）</option>
+                <option value="32">卢旺达（+250）</option>
+                <option value="32">台湾（+886）</option>
+                <!--加上 selected="selected"，默认显示该项-->
+                <option value="32" selected="selected">中国大陆（+86）</option>
+            </select>
+        </div>
+        <div class="phone">
+            <p>手机号</p>
+            <input type="text" id="phone"/>
+        </div>
+    </div>
+</form>
+<!--拖动滑块验证-->
+<div id="drag">
+    <div class="label"></div>
+</div>
+<!--底部文字-->
+<div class="bottom">
+    继续操作即视为同意<a href="http://www.taobao.com/go/chn/member/agreement.php">淘宝服务协议</a>、
+    <a href="http://www.taobao.com/go/chn/tb-fp/2014/law.php" target="_blank">法律声明及隐私权政策</a>
+    和<a href="http://www.taobao.com/go/chn/member/alipay_agreement.php">支付宝协议</a>
+</div>
+</body>
+<script>
+    /*function check (form){
+        if(!/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/i.test(mobile))
+        {
+            alert('error');
+        }
+    }*/
+    /*function
+    checkMobile(str) {
+        var
+                re = /^1\d{10}$/
+        if (re.test(str)) {
+            alert("正确");
+        } else {
+            alert("错误");
+        }
+    }
+    var pho = $("#phone").val();
+    checkMobile('pho'); //调用*/
+    $('#drag').drag();
+</script>
+</html>

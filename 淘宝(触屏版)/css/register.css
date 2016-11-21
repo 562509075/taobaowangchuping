@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/*设置统一样式*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #eee;
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/******************顶部************************/
+header{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #C8C8C8;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    background-color: #F7F7F8;
+    box-shadow: 1px 5px 10px #dcdcdc;
+}
+header a{
+    text-decoration: none;
+    color: #5D656B;
+    flex: 1; /*让所有弹性盒模型对象的子元素都有相同的长度*/
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    padding: 10px 20px;
+    width: 50px;
+    height: 50px;
+}
+a img {
+    width: 30px;
+    height: 30px;
+}
+header span{
+    margin-left: -60px;
+}
+/*********************************************/
+.register-form{
+    width: 92%;
+    margin-top: 10px;
+}
+.text{
+    margin-left: 15px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.register-information{
+    width: 100%;
+    margin-top: 10px;
+}
+.register-information .country,
+.register-information .phone{
+    width: 100%;
+    height: 30px;
+    overflow: inherit;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-color: #d2d2d2;
+    border-top-width: 0;
+    background: white;
+    border-bottom: 1px solid silver;
+}
+.register-information .country p,
+.register-information .country select,
+.register-information .phone p,
+.register-information .phone input{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+.register-information .country select{
+    border: none;
+    padding-left: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    color: #5D656B;
+}
+.register-information .phone input{
+    border: none;
+    padding-left: 30px;
+    margin-left: 50px;
+    font-size: 18px;
+    color: #5D656B;
+}
+.register-information .country select option{
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 10px;
+    padding: 0 2px 1px;
+    font-size: 18px;
+    color: #5D656B;;
+}
+.register-information .phone input{
+    border: none;
+    padding-left: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    color: #5D656B;
+}
+/***********************推动滑块验证*************************/
+#drag{
+    position: relative;
+    width: 96%;
+    margin-top: 10px;
+    margin-left: 2%;
+    line-height: 34px;
+    text-align: center;
+    height: 52px;
+    box-shadow: 0 0 3px #999;
+    background-color: #ddd;
+}
+.label{
+    line-height: 52px;
+    height: 52px;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    color: #aaa;
+    font-weight: 400;
+}
+#drag .handler{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    cursor: move;
+}
+.handler_bg{
+    background: #fff url("../img/register/download.png") no-repeat center;
+}
+.handler_ok_bg{
+    background: #fff url("../img/register/ok.png") no-repeat center;
+}
+#drag .drag_bg{
+    background-color: #7ac23c;
+    height: 50px;
+    width: 0;
+    position: absolute;
+    top: 0;
+}
+#drag .drag_text{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -ms-user-select:none;
+}
+/*******************底部***********************/
+.bottom{
+    color: #6C6C6C;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.bottom a{
+    color: #f40;
+}
