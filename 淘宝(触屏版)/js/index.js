@@ -29,10 +29,11 @@ $(function () {
     },2000);
 });
 
-/*点击隐藏底部广告*/
+/*点击隐藏顶部广告*/
 $(function () {
     $("#client-close").click(function () {
         $("#client").hide();
+        setTimeout($("#allcontent").removeClass("contentall"),2000);
     });
 });
 

@@ -12,7 +12,10 @@ ul {
 a{
     text-decoration: none;
 }
-
+.contentall{
+    position: relative;
+    top: 50px;
+}
 /*****************顶部搜索栏***************/
 .header-top {
     width: 100%;
